@@ -1,0 +1,55 @@
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a svg {
+  margin-right: 5px;
+}
+
+.nav-links a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
